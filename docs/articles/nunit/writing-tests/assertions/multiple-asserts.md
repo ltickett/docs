@@ -18,8 +18,8 @@ public void ComplexNumberTest()
 
     Assert.Multiple(() =>
     {
-        Assert.AreEqual(5.2, result.RealPart, "Real part");
-        Assert.AreEqual(3.9, result.ImaginaryPart, "Imaginary part");
+        Assert.That(5.2, Is.EqualTo(result.RealPart));
+        Assert.That(3.9, Is.EqualTo(result.ImaginaryPart));
     });
 }
 ```
